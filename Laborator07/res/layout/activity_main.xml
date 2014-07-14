@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    <LinearLayout
+        android:layout_width ="wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_gravity = "center" >
+        <Button
+            android:id = "@+id/courseAddButton"
+            android:layout_width ="wrap_content"
+        	android:layout_height = "wrap_content"
+        	android:layout_gravity="center"
+        	android:gravity="center"
+        	android:text = "@string/course_add_button" />
+         <Button
+            android:id = "@+id/teacherAddButton"
+            android:layout_width ="wrap_content"
+        	android:layout_height = "wrap_content"
+        	android:layout_gravity="center"
+        	android:gravity="center"
+        	android:text = "@string/teacher_add_button" />         
+    </LinearLayout>
+    <Button
+        android:id = "@+id/associationCourseTeacherAddButton"
+        android:layout_width ="wrap_content"
+    	android:layout_height = "wrap_content"
+    	android:layout_gravity="center"
+        android:gravity="center"
+      	android:text = "@string/association_course_teacher_add_button" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+	        <Spinner
+	            android:id = "@+id/course1NameSpinner"
+	            android:layout_width ="wrap_content"
+	        	android:layout_height = "wrap_content"
+	        	android:layout_gravity="center"
+	        	android:gravity="center"
+	        	android:spinnerMode="dialog"
+        		android:prompt="@string/course_name_edit_text" />
+	         <Button
+	            android:id = "@+id/teacherSearchButton"
+	            android:layout_width ="wrap_content"
+	        	android:layout_height = "wrap_content"
+	        	android:layout_gravity="center"
+	        	android:gravity="center"
+	        	android:text = "@string/teacher_search_button" />
+	         <ListView
+	            android:id = "@+id/teacherListView"
+	            android:layout_width ="wrap_content"
+	        	android:layout_height = "match_parent" />
+	     </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+	        <Spinner
+	            android:id = "@+id/teacher1NameSpinner"
+	            android:layout_width ="wrap_content"
+	        	android:layout_height = "wrap_content"
+	        	android:layout_gravity="center"
+	        	android:gravity="center"
+	        	android:spinnerMode="dialog"
+        		android:prompt="@string/teacher_name_edit_text" />
+	         <Button
+	            android:id = "@+id/courseSearchButton"
+	            android:layout_width ="wrap_content"
+	        	android:layout_height = "wrap_content"
+	        	android:layout_gravity="center"
+	        	android:gravity="center"
+	        	android:text = "@string/course_search_button" />
+	         <ListView
+	            android:id = "@+id/courseListView"
+	            android:layout_width ="wrap_content"
+	        	android:layout_height = "match_parent" />
+	     </LinearLayout>	     
+    </LinearLayout>
+</LinearLayout>

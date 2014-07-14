@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Web Calculator</string>
+    <string name="method">Metoda</string>
+    <string-array name="methods">
+	    <item>GET</item>
+	    <item>POST</item>
+    </string-array>
+    <string name="operand1">Operand 1</string>
+    <string name="operation">Operatie</string>
+    <string-array name="operations">
+	    <item>+</item>
+	    <item>-</item>
+	    <item>*</item>
+	    <item>/</item>
+    </string-array>
+    <string name="operand2">Operand 2</string>
+    <string name="result">Rezultat</string>
+    <string name="compute">Calculeaza</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

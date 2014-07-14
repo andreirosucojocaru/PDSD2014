@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>GoogleCloudMessaging</display-name>
+  <welcome-file-list>
+    <welcome-file>GoogleCloudMessagingRegisterServlet</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>GoogleCloudMessagingRegisterServlet</display-name>
+    <servlet-name>GoogleCloudMessagingRegisterServlet</servlet-name>
+    <servlet-class>GoogleCloudMessagingRegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GoogleCloudMessagingRegisterServlet</servlet-name>
+    <url-pattern>/GoogleCloudMessagingRegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GoogleCloudMessagingPushNotificationServlet</display-name>
+    <servlet-name>GoogleCloudMessagingPushNotificationServlet</servlet-name>
+    <servlet-class>GoogleCloudMessagingPushNotificationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GoogleCloudMessagingPushNotificationServlet</servlet-name>
+    <url-pattern>/GoogleCloudMessagingPushNotificationServlet</url-pattern>
+  </servlet-mapping>  
+</web-app>

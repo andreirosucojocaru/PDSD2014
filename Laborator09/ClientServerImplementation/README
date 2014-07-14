@@ -1,0 +1,54 @@
+This project uses a Web Server based on Apache Tomcat 7.0.53 and MySQL and
+an Android client which can interact using the Google Cloud Messaging infrastructure.
+
+Run the server on a desktop/laptop and then the client on a mobile device using 
+Android > 2.3 or on Genymotion emulator).
+
+=== SERVER ===
+The server requires for running:
+* Apache Tomcat 7.0.53 server (http://tomcat.apache.org/download-70.cgi), just download
+the archive and unzip it
+* Eclipse IDE for Java EE Developers (http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/keplersr2),
+which should be integrated with the web server (Window -> Preferences -> Server -> Runtime Environments -> Add)
+* MySQL Community Server 5.6.17 (http://dev.mysql.com/downloads/)
+
+1. Run the Laborator09.sql script into a MySQL console (you may use MySQL Workbench), 
+which creates the database and the tables
+2. Import the project into Eclipse IDE for Java EE Developers
+3. Modify the MySQL Community Server password in src/general/Constants.java with your own
+4. Go to the Google Developers Console (https://code.google.com/apis/console/) and generate an API Key for Server
+(you may follow the instructions at http://pdsd2014.andreirosucojocaru.ro/wiki/laboratoare/laborator09, section
+Configurare)
+5. Replace the API_KEY in src/general/Constants.java with the one provided.
+6. Run the project (Run on Server, select the Apache Tomcat instance you previously created).
+
+=== CLIENT ===
+For running the client you will need
+- a mobile device running Android > 2.3 (having Google Play services installed)
+- Genymotion emulator on which Google Play Services must be installed (see instructions at
+http://pdsd2014.andreirosucojocaru.ro/wiki/laboratoare/laborator09), as support for Google Play Services was no longer provided
+starting from version 2.0
+
+You will need to import two java projects into Eclipse:
+- google-play-services_lib - the Google Play Services library for the project
+- GoogleCloudMessagingClient - the project per se
+
+You should replace the PROJECT_NUMBER in src/ro.pub.systems.pdsd.lab09.googlecloudmessagingclient.Configuration
+with the one supplied by the GoogleDeveloperConsole.
+
+Run the application on the mobile device. 
+
+Once you have registered your mobile device on Google Cloud Messaging Server, you should see the API_KEY displayed
+in a TextView. You may now send it to the application server, also providing an username and email, for better identification
+in the web application. Should the registration be successfull, you will not see anything else but the API key.
+
+In the web application (available in the Eclipse embedded browser or at http://192.168.56.1:8080/GoogleCloudMessagingWebServer)
+you should be able to see all the registrations, and sent a push notification to the mobile device.
+
+FAQs
+Q: The client cannot sent the registration ID to the server, due to a connection timeout error.
+A: Check from the mobile device whether the behavior still occurs, and if so, verify the firewall rules and see
+whether the URL is correct (192.168.56.1 should be used for Genymotion, for real devices check the network both
+the server and the client are registered).
+
+For more questions, I am available at andrei.rosucojocaru@gmail.com.

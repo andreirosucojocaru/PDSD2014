@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ex3CoursesTeachers</string>
+    <string name="action_settings">Settings</string>
+    <string name="course_add_button">Adauga Curs</string>
+    <string name="teacher_add_button">Adauga Profesor</string>
+    <string name="association_course_teacher_add_button">Adauga Asociere Curs-Profesor</string>
+    <string name="course_search_button">Cauta Curs</string>
+    <string name="teacher_name_edit_text">Nume Profesor</string>
+    <string name="teacher_search_button">Cauta Profesor</string>
+	<string name="course_name_edit_text">Denumire Curs</string>
+	<string name="name_text_view">Nume/Denumire:</string>
+	<string name="name_edit_text">Nume/Denumire</string>
+	<string name="add_button">Adauga</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Google Cloud Messaging Client</string>
+    <string name="username">Nume de Utilizator</string>
+    <string name="email">Email</string>
+    <string name="registrationid">Identificator Inregistrare</string>
+    <string name="send">Trimite</string>
+    <string name="content_description">Logo GCM</string>
+    
+    <string name="action_settings">Settings</string>
+
+</resources>
